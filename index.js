@@ -6,6 +6,7 @@ const loginRoute = require("./routes/login");
 const registerRoute = require("./routes/register");
 const scammerRoute = require("./routes/scammerRoute");
 const warningRoute = require("./routes/warningRoute");
+require("dotenv").config(); // Đảm bảo dotenv được import
 
 const app = express();
 const port = process.env.PORT || 5000;
