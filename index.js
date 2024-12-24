@@ -8,7 +8,7 @@ const scammerRoute = require("./routes/scammerRoute");
 const warningRoute = require("./routes/warningRoute");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(
   cors({
